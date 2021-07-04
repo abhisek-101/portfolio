@@ -1,5 +1,5 @@
 import React from "react";
-
+import myresume from "./abhi_resume.pdf";
 const About = ({ data }) => {
   if (data) {
     var name = data.name;
@@ -11,7 +11,6 @@ const About = ({ data }) => {
     var zip = data.address.zip;
     var phone = data.phone;
     var email = data.email;
-    var resumeDownload = data.resumedownload;
   }
 
   return (
@@ -47,7 +46,7 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <a href={myresume} className="button">
                   <i className="fa fa-download"></i>Download Resume
                 </a>
               </p>
